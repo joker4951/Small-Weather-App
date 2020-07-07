@@ -69,9 +69,10 @@ input.addEventListener('keyup', ()=>{
                 })
                 .then(data =>{
                     if (data.length<1){
-                        alert("Invalid City Name");
+                        document.getElementsByClassName('warning')[0].style.display = 'flex';
                     }
                     else {
+                        document.getElementsByClassName('warning')[0].style.display = 'none';
                         wid = data[0].woeid;
                     const proxy = 'https://cors-anywhere.herokuapp.com/';
                     const weather = `${proxy}https://www.metaweather.com/api/location/${wid}/`;

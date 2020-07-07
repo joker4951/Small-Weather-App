@@ -71,3 +71,14 @@ body {
 .degree-section h2 {
     font-size: 40px;
 }
+
+.warning {
+    background-color: rgba(255, 0, 0, 0.404);
+    color: seashell;
+    width: 100%;
+    font-size: 0.7em ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
