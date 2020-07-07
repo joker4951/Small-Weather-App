@@ -16,7 +16,7 @@ body {
 }
 
 .location, .temperature {
-    height: 30vh;
+    height: 25vh;
     width: 60%;
     display: flex;
     justify-content: space-around; 
