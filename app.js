@@ -70,8 +70,12 @@ input.addEventListener('keyup', ()=>{
                 .then(data =>{
                     if (data.length<1){
                         document.getElementsByClassName('warning')[0].style.display = 'flex';
+                        document.getElementsByClassName('location')[0].style.display = 'none';
+                        document.getElementsByClassName('temperature')[0].style.display = 'none';
                     }
                     else {
+                        document.getElementsByClassName('location')[0].style.display = 'flex';
+                        document.getElementsByClassName('temperature')[0].style.display = 'flex';
                         document.getElementsByClassName('warning')[0].style.display = 'none';
                         wid = data[0].woeid;
                     const proxy = 'https://cors-anywhere.herokuapp.com/';
